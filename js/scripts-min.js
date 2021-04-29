@@ -161,6 +161,16 @@ var toggleAction = function toggleAction(mainNav) {
 
 (0, _isMobile.verifyMobile)() ? setToggleButton() : null;
 
+var images = _toConsumableArray((0, _initialVariables.all)('img'));
+
+images.map(function (img) {
+  var src = img.src; // c.log(src)
+
+  src = src.replace('http://www.tramitamexusa.com/wp-content/uploads/2021/04/', 'img/'); // c.log(src)
+
+  img.src = src;
+});
+
 },{"./modules/active-menu":2,"./modules/initialVariables":3,"./modules/isMobile":4,"./modules/scrollSmooth":5}],2:[function(require,module,exports){
 "use strict";
 
