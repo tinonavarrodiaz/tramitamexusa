@@ -170,6 +170,8 @@ images.map(function (img) {
 
   img.src = src;
 });
+var contactSection = (0, _initialVariables.id)('contacto');
+_initialVariables.d.body.classList.contains('Inicio') ? null : contactSection.remove();
 
 },{"./modules/active-menu":2,"./modules/initialVariables":3,"./modules/isMobile":4,"./modules/scrollSmooth":5}],2:[function(require,module,exports){
 "use strict";
